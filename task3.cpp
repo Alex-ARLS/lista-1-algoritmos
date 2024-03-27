@@ -16,13 +16,12 @@ int main (){
 
     int numeroParcelas;
     double valorParcelas;
-    cout << "por gentileza digite em quantas parcelas vc quer parcelar;\n";
+    cout << "por gentileza digite em quantas parcelas vc quer vai fazer o pagamento;\n";
     cin >> numeroParcelas;
 
         if (numeroParcelas <= 0 || numeroParcelas >= 10){  
         cout << "o número de parcelas que vc digitou não é valido";
         }
-    cout 
     
 
 
