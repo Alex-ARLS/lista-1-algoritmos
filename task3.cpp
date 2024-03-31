@@ -5,15 +5,20 @@ a vista ou parcelado em até 10 vezes sem juros.*/
 
 using namespace std;
 int main (){
-    float valorCompra;
+    float valorCompra, valorDaParcela;
     int prestacoes;
 
-    cout <<"olá seja bem vindo as lojas sua melhor compra \n";
-    cout <<"qual valor do produto que você deseja?";
+    cout <<"ola seja bem vindo as lojas sua melhor compra \n";
+    cout <<"qual valor do produto que vc deseja?";
     cin >> valorCompra;
 
-    cout << "em quantas prestacoes vc deseja realizar esta compra?";
+    cout << "em quantas prestacoes vc deseja realizar esta compra?\n";
     cin >> prestacoes;
 
+    valorDaParcela = valorCompra / prestacoes;
+
+    cout << "o valor da parcela ficou no valor de: " << valorDaParcela << "reais";
     
+    return 0;
+
 }
