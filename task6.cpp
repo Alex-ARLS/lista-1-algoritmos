@@ -5,7 +5,7 @@ do  distribuidor  seja  de  28%  e  os  impostos  de  45%,  escreva  um  algorit
 fábrica de um carro e escreva o custo ao consumidor*/
 using namespace std;
 int main(){
-    double imposto, taxa_distribuidor, porcentagem;
+    double imposto, taxa_distribuidor;
     float valor_carro, valor_total;
 
     cout<< "qual o custo de producao esse carro teve?\n";
@@ -16,7 +16,7 @@ int main(){
     cin >> taxa_distribuidor;
 
     cout <<"uau, voce acaba de produzir esse carro no melhor pais para ser produzido, parabens\n voce acaba de receber uma taxa de 28 % do distribuidor e de 45 % do estado, apenas em impostos, voce e muito inteligente!";
-    valor_total = valor_carro + (valor_carro * taxa_distribuidor ) + (valor_carro * imposto);
+    valor_total = valor_carro + (valor_carro * taxa_distribuidor / 100 ) + (valor_carro * imposto / 100) ;
 
     cout <<"como havia avisado anteriormente, vc e uma maquina produziu seu carro no lugar certo o valor total do carro é; "<< valor_total;
     return 0;
