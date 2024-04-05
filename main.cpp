@@ -1,23 +1,20 @@
+/*Leia  uma  temperatura  em  graus  Celsius  e  apresente-a  convertida  em  graus  Fahrenheit.  A 
+fórmula de conversão é F=(9*C+160)/5, sendo F a temperatura em Fahrenheit e C a temperatura 
+em Celsius. basta multiplicar por 1,8 e somar 32 para ter o valor Fahrenheit*/
 #include <iostream>
 using namespace std;
-int main(){
-    double imposto, taxa_distribuidor, porcentagem;
-    float valor_carro, valor_total;
+int main() {
+    double celsius, fahren;
+    cout << "qual a temperatura neste exato momento para calcularmos? insira em Graus Celsius \n";
+    cin >> celsius;
 
-    cout<< "qual o custo de producao esse carro teve?\n";
-    cin >> valor_carro;
-    cout << "qual a porcentagem de impostos aplicada sobre esse veiculo?\n";
-    cin >> imposto;
-    cout<< "qual a taxa do distribuidor aplicada para esse veiculo?\n";
-    cin >> taxa_distribuidor;
+    fahren = (celsius * 1.8) + 32;
 
-    cout <<"uau, voce acaba de produzir esse carro no melhor pais para ser produzido, parabens\n voce acaba de receber uma taxa de 28 % do distribuidor e de 45 % do estado, apenas em impostos, voce e muito inteligente!";
+    cout << "essa temperatura convertida e igual a; \n " << fixed << fahren;
 
-    porcentagem = imposto * taxa_distribuidor/ 100;
-    
-    valor_total = porcentagem * valor_carro;
+    cout << "\n obrigado!!!\n";
 
-    cout <<"como havia avisado anteriormente, vc e uma maquina produziu seu carro no lugar certo o valor total do carro é; "<< valor_total;
+
+
     return 0;
-    
 }
