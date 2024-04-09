@@ -7,5 +7,7 @@ enfim o sinal “=”, quando então a calculadora mostra o resultado. Exemplos:
 
 using namespace std;
 int main(){
+
+    
     
 }
