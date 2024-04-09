@@ -6,25 +6,15 @@ mostrado abaixo. Ex: janeiro, começando na 5a feira*/
 
 using namespace std;
 
-int int main() {
+int main() {
     //dia inicial 1 para doming, 2 para segunda,...
-    int mes, dia;
+    int month, firstDay;
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    cout << "qual o mes que vc deseja?1 - 12";
+    cin >> month;
+    cout << "qual o dia vc deseja?";
+    cin >> firstDay;
+    
+    
     return 0;
 }
