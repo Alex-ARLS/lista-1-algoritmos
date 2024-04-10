@@ -18,7 +18,7 @@ não formarem um triângulo, escrever esta mensagem. Considere as seguintes prop
 #include <iostream>
 using namespace std;
 int main (){
-    float lado1, lado2, lado3;
+    int lado1, lado2, lado3;
 
     cout << "qual valor do lado 1?";
     cin >> lado1;
