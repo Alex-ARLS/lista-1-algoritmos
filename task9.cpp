@@ -5,13 +5,25 @@ da troca o algoritmo terá que escreva Val1 = 11 e Val2 = 10. */
 
 using namespace std;
 int main (){
-    int var1;
-    int var2;
-    
-    
-        
-    
+    int var1, var2;
 
+    cout<<"qual o valor da variavel 1?";
+    cin >> var1;
+
+    cout << "qual valor da variavel 2?";
+    cin >> var2;
+
+    var1 = var1 + var2;
+    var2 = var1 - var2;
+    var1 = var1 - var2;
+
+    //ou
+
+    /*temp = Val1; add variavel temporaria, ams vai ocupar mais espaço na memoria
+    Val1 = Val2;
+    Val2 = temp;*/
+    cout << "\n apos a troca de valores var1 vai ficar: "<<var1 << " e var2 vai ficar: " << var2;
+    return 0;
 
 }
 
