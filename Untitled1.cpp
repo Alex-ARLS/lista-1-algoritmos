@@ -1,21 +1,17 @@
- #include <iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
-  int myAge;
-  int votingAge;
-  
-  cout<<"how old are you?";
-  cin >> myAge;
-  
-  cout << "qual a idade minima para votar?";
-  cin >>votingAge;
+    int num = 1;
+    int soma = 0;
 
-  if (myAge >= votingAge) {
-    cout << "Old enough to vote!";
-  } else {
-    cout << "Not old enough to vote.";
-  }
-  return 0;
+    while (num <= 10) {
+        soma += num;  // Equivalente a: soma = soma + num;
+        num++;
+    }
+
+    cout << "A soma dos numeros de 1 a 10 e: " << soma << endl;
+
+    return 0;
 }
 

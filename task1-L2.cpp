@@ -9,11 +9,6 @@ não formarem um triângulo, escrever esta mensagem. Considere as seguintes prop
     equilateros;tem os comprimentos dos três lados iguais.
     isósceles; tem os comprimentos de dois lados iguais e escalenos tem os comprimentos dos tres.
     lados diferentes. 
-
-
-
-
-
 */
 #include <iostream>
 using namespace std;
@@ -22,10 +17,24 @@ int main (){
 
     cout << "qual valor do lado 1?";
     cin >> lado1;
+
     cout << "qual valor do lado 2?";
     cin >> lado2;
+    
     cout << "qual valor do lado 3?";
     cin >> lado3;
+
+    if ((lado1 <= lado2 + lado3)&&(lado2 <= lado1 + lado3)&&(lado3 <= lado1 + lado2))
+    {
+        cout <<"bom... a soma dos dois lados, é maior que um lado! por isso não é um triangulo.";
+    }else(
+        cout <<"os valores que você digitou caracterizam um triangulo, parabens, amigo!";
+    )
+
+    
+    
+
+
     
 
 
