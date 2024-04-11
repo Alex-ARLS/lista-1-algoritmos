@@ -10,5 +10,5 @@ maior que 100 ou não e se for ímpar verifique
     cout << "digite um numero para decifrarmos";
     cin >> par, impar;
     
-
+    
  }

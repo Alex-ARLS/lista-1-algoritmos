@@ -9,7 +9,7 @@ não formarem um triângulo, escrever esta mensagem. Considere as seguintes prop
 
     equilateros;tem os comprimentos dos três lados iguais.
 
-    isósceles; tem os comprimentos de dois lados iguais e 
+    isósceles; tem os comprimentos de dois lados iguais e um lado diferente
     
     escalenos tem os comprimentos dos tres lados diferentes. 
 */
@@ -18,29 +18,24 @@ using namespace std;
 int main (){
     int lado1, lado2, lado3;
 
-    cout << "qual valor do lado 1?";
-    cin >> lado1;
-
-    cout << "qual valor do lado 2?";
-    cin >> lado2;
-    
-    cout << "qual valor do lado 3?";
-    cin >> lado3;
-
-    if ((lado1 <= lado2 + lado3)&&(lado2 <= lado1 + lado3)&&(lado3 <= lado1 + lado2)){
-        cout <<"bom... a soma dos dois lados, e maior que um lado! por isso não  um triangulo."; //triangulo
-    } else{
-        cout <<"os valores que você digitou caracterizam um triangulo, parabens, amigo!";
-
-    } if((lado1 == lado2)&&(lado2 == lado3)&&(lado3 == lado1)){
-        cout << "parabens vc acaba de escrever dimensoes de um equilatero, eles possuem lados exatamente iguais.";
-
-    } else if((lado1 == lado2)&&(lado2 == lado1)&&(lado3 != lado2)&&(lado1 != lado2)){
-        cout <<"parabens vc acaba digitar dimensoes de um isosceles";
-
-    } else {
-        cout<<"parabens vc acaba de digitar as dimensoes de um escaleno";
+    cout <<"qual valor dos lados? dos quais vc quer calcular?";
+    cin >> lado1 >> lado2 >> lado3;
+    if ((lado1 > (lado2 + lado3))||(lado2 > (lado1 + lado2))||(lado3 > (lado2 + lado1))){ //havia um erro na hora de usar o operador maior e menor que.
+        cout<< "os dados dos quais vc digitou refere-se a um triangulo.";
+    }else{
+        if ((lado1 == lado2)&&(lado2 == lado3))
+        {   
+            cout<<"vc acaba de seletar o equilatero.";
+            
+        }else if((lado1 != lado2)&&(lado2 == lado3)){                                                                         //não coloca parametro se for else. if else sim, coloca
+            cout<<"vc acaba de seletar o isosceles.";
+        }else{
+            cout <<"vc acaba de seletar o escaleno.";
+        }
     }
+    
+    
+
 
     return 0;
 }
