@@ -14,6 +14,7 @@ CÓDIGO  CARGO  PERCENTUAL
 using namespace std;
 int main (){
     int codigoCargo;
+    bool cargoMais1;
     float salario;
 
     cout<<"digite o codigo do cargo;";
@@ -25,26 +26,23 @@ int main (){
     switch (codigoCargo)
     {
     case 101:
-
-        cout <<""
-
-
-
-
-
-
-
+        salario = (salario * 0.10) + salario;
+        cout << "o seu salario de gerente recebeu acrescimo de 10%\n" << salario;
         break;
 
     case 102:
+    salario = (salario * 0.20) + salario;
+        cout << "o seu salario de engenheiro recebeu acrescimo de 10%\n" << salario;
 
         break;
     case 103:
+    salario = (salario * 0.30) + salario;
+        cout << "o seu salario de tecnico recebeu acrescimo de 10%\n" << salario;
 
         break;      
     default:
+        cout<< "vc digitou um codigo de cargo que ainda nao foi cadastrado, deseja cadastrar?\n";
+        cin>> cargoMais1;
         break;
     }
-    
-    
 }
