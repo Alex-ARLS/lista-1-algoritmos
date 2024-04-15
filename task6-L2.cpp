@@ -12,25 +12,31 @@ Professor nível 3  R$ 25,00 por hora aula */
 
 using namespace std;
 int main(){
-    int professorLevel;
+    int professorLevel, qtdAulas;
     float horaAula;
 
     cout<<"qual o nivel do professor que vc deseja calcular?";
     cin>> professorLevel;
 
+    cout << "quantas aulas ele deu?";
+    cin >> qtdAulas;
+
     switch (professorLevel)
     {
     case 1:
     horaAula = 12.00;
-        cout <<"o nivel do qual vc inseriu e igual a:" << horaAula;
+    horaAula = qtdAulas * horaAula;
+        cout <<"o nivel do qual vc inseriu e igual a: " << horaAula << "reais o total das aulas";
         break;
         case 2:
     horaAula = 17.00;
-        cout <<"o nivel do qual vc inseriu e igual a:" << horaAula;
+    horaAula = qtdAulas * horaAula;
+        cout <<"o nivel do qual vc inseriu e igual a: " << horaAula <<"reais o total das aulas";
         break;
         case 3:
     horaAula = 25.00;
-        cout <<"o nivel do qual vc inseriu e igual a:" << horaAula;
+    horaAula = qtdAulas * horaAula;
+        cout <<"o nivel do qual vc inseriu e igual a: " << horaAula << "reais o total das aulas";
         break;
     
     default:
