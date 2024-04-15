@@ -59,7 +59,7 @@ int main (){
             {
             case 105:
                 totalConta += qtdBebida;
-                cout<<"qu"
+                cout<<"qu";
                 break;
             
             default:
