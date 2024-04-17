@@ -42,7 +42,7 @@ int main (){
                 break;
                             case 103:
                 cout <<"cachorro quente adicionado.";   
-                totalConta += qtdSanduiche;             
+                totalConta += qtdSanduiche;
                 break;
                             case 104:                
                 cout <<"cachorro quente adicionado.";
