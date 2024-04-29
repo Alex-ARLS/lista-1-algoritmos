@@ -21,10 +21,23 @@ using namespace std;
 int main (){
     int codSanduiche, codBebida, qtdBebida, qtdSanduiche;
 
-    float totalConta;
+    float totalConta = 0.0;
+    cout << "insira o codigo referente ao seu pedido, conforme o Cardapio a baixo!";
+cout <<"------------ Sanduíche\n   ";
+cout <<"------------ Codigo  Descricao  Preço Unitario\n  ";
+cout <<"------------ 100  Cachorro quente  1,10  \n";
+cout <<"------------ 101  Bauru simples    1,30  \n";
+cout <<"------------ 102  Bauru com ovo    1,50  \n";
+cout <<"------------ 103  Hamburger        1,10  \n";
+cout <<"------------ 104  Cheesburger      1,30  \n";
+cout <<"------------ Bebida   \n";
+cout <<"------------ Código  Descricao  Preço Unitario\n  ";
+cout <<"------------ 105  Refrigerante  1,00  \n";
+cout <<"------------ 106  Suco          2,00  \n";
+cout <<"------------ 107  Nescau        1,50  \n";
+    cin >> codBebida >> codSanduiche;
 
-  
-    switch (codSanduiche)
+       switch (codSanduiche)
             {
             case 100:
                 cout <<"cachorro quente adicionado.";
@@ -48,16 +61,8 @@ int main (){
                 totalConta += qtdSanduiche * 2.80;
                 
                 break;    
-            
-            default:
-                cout << "nenhum item selecionado conforme o codigo de sanduiche informado";
-                break;
-            }
-
-            switch (codBebida)
-            {
             case 105:
-                totalConta += qtdBebida * 2.80;
+                totalConta += qtdBebida * 2;
                 cout<<"vc adicionou refrigerante";
                 break;
             case 106:
@@ -72,5 +77,6 @@ int main (){
             default:
                 cout << "nenhum item selecionado conforme o codigo de sanduiche informado";
                 break;
-            }
     }
+    
+}
