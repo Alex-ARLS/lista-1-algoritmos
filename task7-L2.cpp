@@ -23,30 +23,29 @@ int main (){
 
     float totalConta;
 
-    do
-    {   
-            switch (codSanduiche)
+  
+    switch (codSanduiche)
             {
             case 100:
                 cout <<"cachorro quente adicionado.";
                 cin >> qtdSanduiche;
-                totalConta += qtdSanduiche;
+                totalConta += qtdSanduiche  * 1.10;
                 break;
-                            case 101:
+            case 101:
                 cout <<"bauro simples adicionado";
-                totalConta += qtdSanduiche;
+                totalConta += qtdSanduiche * 1.50;
                 break;
-                            case 102:
-                cout <<"cachorro quente adicionado.";   
-                totalConta += qtdSanduiche;             
+            case 102:
+                cout <<"bauru com ovo adicionado.";   
+                totalConta += qtdSanduiche * 1.80;             
                 break;
-                            case 103:
-                cout <<"cachorro quente adicionado.";   
-                totalConta += qtdSanduiche;
+            case 103:
+                cout <<"hamburguer adicionado.";   
+                totalConta += qtdSanduiche * 2.50;
                 break;
-                            case 104:                
-                cout <<"cachorro quente adicionado.";
-                totalConta += qtdSanduiche;
+            case 104:                
+                cout <<"cheesburguer adicionado.";
+                totalConta += qtdSanduiche * 2.80;
                 
                 break;    
             
@@ -58,15 +57,20 @@ int main (){
             switch (codBebida)
             {
             case 105:
-                totalConta += qtdBebida;
-                cout<<"qu";
+                totalConta += qtdBebida * 2.80;
+                cout<<"vc adicionou refrigerante";
                 break;
-            
+            case 106:
+                totalConta += qtdBebida * 2.20;
+                cout<<"vc adicionou suco";
+                break;
+            case 107:
+                totalConta += qtdBebida * 1.50;
+                cout<<"vc adicionou nescau";
+                break;
+
             default:
+                cout << "nenhum item selecionado conforme o codigo de sanduiche informado";
                 break;
             }
-        
-
     }
-    
-}

@@ -1,4 +1,4 @@
-/*VElabore um algoritmo que mostre o calendário de um determinado mês. Os dados de entrada são o mês 
+/* Elabore um algoritmo que mostre o calendário de um determinado mês. Os dados de entrada são o mês 
 (cujos dados devem ser mostrados) e o dia da semana em que esse mês inicia. Assuma que esse mês está 
 em  um  ano  que  não  é  bissexto,  porém  considere  meses  de  28,  30  e  31.  O  resultado  deve  ser  como 
 mostrado abaixo. Ex: janeiro, começando na 5a feira*/
