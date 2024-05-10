@@ -27,7 +27,7 @@ int main(int argc, const char** argv) {
 
     switch (codSanduiche)
     {
-    case /* constant-expression */:
+    case :
         /* code */
         break;
     
