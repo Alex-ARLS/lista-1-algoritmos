@@ -15,7 +15,7 @@ int main (){
     cin >> cigarrosPorDia;
 
     cout << "qual o preco da carteira?";
-    cin >> preco_carteira;
+    cin >> preco_carteira; 
 
     int totalCigarros = tempoFumando * 365 * cigarrosPorDia;    //aqui teremos apenas o numero total de cigarros, sem termos os valores. precisamos encontrar isso com o valor da carteira
     int totalCarteiras = totalCigarros / 20; // aqui vamos pegar o valor total de cigarros e dividir por 20, aqui já podemos ter uma ideia de quantas cartelas de cigarros foram consumidas
