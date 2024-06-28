@@ -1,35 +1,32 @@
-/*Elabore um algoritmo que leia dois números inteiros, A e B, calcule e escreva o resto da divisão de A por 
-B sem usar o operador de resto (%).*/
+/*O número 3025 possui a seguinte característica: 30+25 = 55 e 552 = 3025. Elaborar um algoritmo que leia 
+N números de 4 algarismos e escreva a mensagem “positivo” se o número tiver essa característica e 
+“negativo” se não tiver. */
 #include <iostream>
-#include <iomanip>
-
 using namespace std;
 int main (){
-    int A, B, resto;
+    int N, number;
+    int firstPart, secondPart, sum;
+    cout <<"informe a quantidade de numeros que voce quer verifcar:";
+    cin >> N;
+    for (int i=0; i < N; i++){
+        cout <<"informe um numero de 4 digitos:";
+        cin >> number;
 
-    cout << "informe o valor de A";
-    cin >> A;
-    cout << "informe o valor de B";
-    cin >> B;
+        firstPart = number / 100;
+        secondPart = number % 100;
+        sum = firstPart + secondPart;
 
-    
+        if (sum *sum == number){
+            cout <<"positivo"<< endl;
 
-    if (B== 0){
-        cout << "essa divisao por zero nao e perimitida";
-
-    }else{
-        resto = A;
-
-        while (resto >=B){
-            resto = resto - B;
-
+        }else {
+            cout << "negativo" << endl;
         }
-
-        cout << "o resto da divisao de " << A <<" por" << " e: " <<resto << endl;
 
     }
 
     return 0;
+    
 }
 
 
