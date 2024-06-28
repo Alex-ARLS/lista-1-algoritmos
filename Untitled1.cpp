@@ -1,32 +1,32 @@
-/*O número 3025 possui a seguinte característica: 30+25 = 55 e 552 = 3025. Elaborar um algoritmo que leia 
-N números de 4 algarismos e escreva a mensagem “positivo” se o número tiver essa característica e 
-“negativo” se não tiver. */
+/*Elabore  um  algoritmo  que  leia  um  número  inteiro  qualquer  e  verifique  se  ele  é  quadrangular.  Se  for, 
+mostrar os próximos 10 quadrangulares depois dele. Se não for, informar. OBS: Os números 
+quadrangulares são 1, 4, 9, 16, 25, ..., ou seja, 1x1, 2x2, 3x3, 4x4, ... */
 #include <iostream>
+#include <cmath>
+
 using namespace std;
-int main (){
-    int N, number;
-    int firstPart, secondPart, sum;
-    cout <<"informe a quantidade de numeros que voce quer verifcar:";
-    cin >> N;
-    for (int i=0; i < N; i++){
-        cout <<"informe um numero de 4 digitos:";
-        cin >> number;
 
-        firstPart = number / 100;
-        secondPart = number % 100;
-        sum = firstPart + secondPart;
+int main(){
+    int num, raiz;
+    bool isQuadrangular = false;
+    cout << "informe o numero inteiro:\n\t";
+    cin >> num;
 
-        if (sum *sum == number){
-            cout <<"positivo"<< endl;
-
-        }else {
-            cout << "negativo" << endl;
-        }
-
-    }
-
-    return 0;
     
+    raiz = sqrt(num);
+
+    if (raiz * raiz == num)
+    {
+        isQuadrangular = true;
+    }
+    if (isQuadrangular){
+        cout << "e um numero quadrangular\n\t";
+        cout <<"os 10 numeros quadrangulares depois dele sao:\n\t";
+        for (int i = 1; i <= 11 ; i++){
+            int proxQuadrangular = (raiz + i) * (raiz + i);
+            cout <<proxQuadrangular <<endl;
+            }
+    }else{
+        cout << num << " não é um número quadrangular." << endl;
+    }
 }
-
-
