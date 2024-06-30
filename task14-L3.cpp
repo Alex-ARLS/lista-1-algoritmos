@@ -1,7 +1,7 @@
-/* Elabore um algoritmo que apresente um menu contendo as opÁıes 1-Tri‚ngulo, 2-Quadrado, 
-3Ret‚ngulo, 4-TrapÈzio, 5-CÌrculo, 6-Sair. Em seguida, de acordo com a opÁ„o escolhida pelo usu·rio, o 
-algoritmo deve solicitar as informaÁıes necess·rias para c·lculo da ·rea, efetuar o c·lculo e escrever o 
-resultado. O algoritmo sÛ dever· finalizar quando o usu·rio escolher a opÁ„o 6-Sair.*/
+/* Elabore um algoritmo que apresente um menu contendo as op√ß√µes 1-Tri√¢ngulo, 2-Quadrado, 
+3Ret√¢ngulo, 4-Trap√©zio, 5-C√≠rculo, 6-Sair. Em seguida, de acordo com a op√ß√£o escolhida pelo usu√°rio, o 
+algoritmo deve solicitar as informa√ß√µes necess√°rias para c√°lculo da √°rea, efetuar o c√°lculo e escrever o 
+resultado. O algoritmo s√≥ dever√° finalizar quando o usu√°rio escolher a op√ß√£o 6-Sair.*/
 
 
 #include <iostream>
@@ -11,7 +11,7 @@ using namespace std;
 int main(){
     int opcao = 0;
     while (opcao != 6){
-        cout << "Menu de opÁıes:" << endl;
+        cout << "Menu de op√ß√µes:" << endl;
         cout << "1 - Triangulo" << endl;
         cout << "2 - Quadrado" << endl;
         cout << "3 - Retangulo" << endl;
@@ -31,12 +31,12 @@ int main(){
             cout << "Digite o lado do quadrado: ";
             cin >> lado;
             double area = lado * lado;
-            cout << "A ·rea do quadrado È: " << area << endl;
+            cout << "A √°rea do quadrado √©: " << area << endl;
         }else if (opcao == 3){
             double largura, altura;
-            cout << "Digite a largura do ret‚ngulo: ";
+            cout << "Digite a largura do ret√¢ngulo: ";
             cin >> largura;
-            cout << "Digite a altura do ret‚ngulo: ";
+            cout << "Digite a altura do ret√¢ngulo: ";
             cin >> altura;
             double area = largura * altura;
         }else if(opcao == 4){
@@ -48,14 +48,14 @@ int main(){
             cout << "Digite a altura do trapezio: ";
             cin >> altura;
             double area = ((baseMaior + baseMenor) * altura) / 2;
-            cout << "A area do trapÈzio È: " << area << endl;
+            cout << "A area do trap√©zio √©: " << area << endl;
         }else if (opcao ==5){
             double raio;
-            cout << "Digite o raio do cÌrculo: ";
+            cout << "Digite o raio do c√≠rculo: ";
             cin >> raio;
             float pi = 3.14;
             double area = pi * raio * raio;
-            cout << "A area do cÌrculo È: " << area << endl;
+            cout << "A area do c√≠rculo √©: " << area << endl;
         }else if (opcao == 6){
             cout << "saindo..." << endl;
 
